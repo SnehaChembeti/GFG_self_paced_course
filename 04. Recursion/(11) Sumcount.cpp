@@ -5,7 +5,7 @@ int countsumpair (int arr[], int n, int sum)
 {
     if (n == 0)
         return sum == 0? 1:0;
-    return countsumpair(arr,n-1,sum)+countsumpair(arr,n-1, sum-arr[n-1]);
+    return countsumpair(arr,n-1,sum)+countsumpair(arr,n-1, sum-arr[n-1]);     //O(2^n), O(2^n);
 }
 
 int main()
